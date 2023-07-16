@@ -19,22 +19,22 @@ namespace _2._Stack_Sum
             }
 
             string curentInput = string.Empty;
-            while ((curentInput = ToLLower(Console.ReadLine())) != "end")
+            while ((curentInput = (Console.ReadLine()).ToLower()) != "end")
             {
                 string[] comandARG = curentInput.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
                 string comand = comandARG[0];
-                if(comand == "add")
+                if (comand == "add")
                 {
                     int intFirst = int.Parse(comandARG[1]);
                     int intSecond = int.Parse(comandARG[2]);
                     stack.Push(intFirst);
                     stack.Push(intSecond);
                 }
-                else if(comand == "remove")
+                else if (comand == "remove")
                 {
                     int nNumbers = int.Parse(comandARG[1]);
-                    if(stack.Count > nNumbers)
+                    if (stack.Count > nNumbers)
                     {
                         for (int i = 0; i < nNumbers; i++)
                         {
@@ -47,16 +47,16 @@ namespace _2._Stack_Sum
             Console.WriteLine($"Sum: {stack.Sum()}");
         }
 
-        public static string ToLLower(string curentInput)
-        {
-            char[] chars = curentInput.ToCharArray();
-            StringBuilder sb = new();
-            for (int i = 0; i < chars.Length; i++)
-            {
-                
-                sb.Append(char.ToLower(chars[i]));
-            }
-            return sb.ToString();
-        }
+        //public static string ToLLower(string curentInput)
+        //{
+        //    char[] chars = curentInput.ToCharArray();
+        //    StringBuilder sb = new();
+        //    for (int i = 0; i < chars.Length; i++)
+        //    {
+
+        //        sb.Append(char.ToLower(chars[i]));
+        //    }
+        //    return sb.ToString();
+        //}
     }
 }
