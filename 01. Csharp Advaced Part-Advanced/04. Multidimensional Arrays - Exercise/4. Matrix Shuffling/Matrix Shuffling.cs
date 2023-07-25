@@ -38,11 +38,6 @@ namespace _4._Matrix_Shuffling
                 string operation = comandArg[0];
                 bool isValide = false;
 
-                if (operation != "swap" )
-                {
-                    Console.WriteLine("Invalid input!");
-                    continue;
-                }
                 Regex digits = new(@"\bswap[ ]+\d+[ ]+\d+[ ]+\d+[ ]+\d+\b");
                 Match validCommand = digits.Match(comand);
                 if (!validCommand.Success)
