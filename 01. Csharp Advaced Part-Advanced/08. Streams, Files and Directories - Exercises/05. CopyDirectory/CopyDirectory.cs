@@ -15,18 +15,20 @@
 
         public static void CopyAllFiles(string inputPath, string outputPath)
         {
-            string[] dir = Directory.GetDirectories(inputPath);
-            foreach (string dirName in dir)
+            if (Directory.Exists(outputPath))
             {
-                DirectoryInfo inputPathInfo = new DirectoryInfo(inputPath);
-                string curentPath = dirName;
-                string name = "\\" + inputPathInfo.Name;
-                curentPath = curentPath.Replace(name, string.Empty);
-                Directory.Move(dirName, curentPath);
+                Directory.Delete(outputPath, true);
             }
-            Directory.Delete(outputPath, true);
-            Directory.Move(inputPath, outputPath);
+            Directory.CreateDirectory(outputPath);
 
+            string[] files = Directory.GetFiles(inputPath);
+
+            foreach (string file in files)
+            {
+                string filename = Path.GetFileName(file);
+                string destination = Path.Combine(outputPath, filename);
+                File.Copy(file, destination);
+            }
         }
     }
 }
