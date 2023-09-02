@@ -21,7 +21,7 @@
                     Console.WriteLine($"{select.Value} coin(s) with value {select.Key}");
                 }
             }
-            catch (Exception ex)
+            catch (InvalidOperationException ex)
             {
 
                 Console.WriteLine(ex.Message);
@@ -31,11 +31,10 @@
         {
             Dictionary<int, int> choosencCoin = new();
             coins = coins.OrderByDescending(x => x).ToList();
-            //int curentsum = 0;
 
             while (targetSum != 0)
             {
-                if(targetSum / coins.First() > 1)
+                if (targetSum / coins.First() > 1)
                 {
                     int value = targetSum / coins.First();
                     int key = coins.First();
@@ -56,15 +55,15 @@
                         {
                             choosencCoin[coin] = 0;
                         }
-                        choosencCoin[coin] ++;
+                        choosencCoin[coin]++;
                         targetSum -= coin;
-                       break;
+                        break;
                     }
                 }
 
-                if(targetSum >0  && coins.Last() > targetSum)
+                if (targetSum > 0 && coins.Last() > targetSum)
                 {
-                    throw  new InvalidOperationException("Error");
+                    throw new InvalidOperationException("Error");
                 }
             }
             return choosencCoin;
