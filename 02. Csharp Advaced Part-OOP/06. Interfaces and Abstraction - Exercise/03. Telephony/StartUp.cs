@@ -1,0 +1,16 @@
+﻿using Telephony.Core;
+using Telephony.Core.Interface;
+using Telephony.Models;
+using Telephony.Models.Interface;
+
+namespace Telephony
+{
+    public class StartUp
+    {
+        public static void Main(string[] args)
+        {
+            IEngine engine = new Engine();
+            engine.run();
+        }
+    }
+}
