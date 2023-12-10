@@ -1,0 +1,30 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 30px 50px;
+}
+
+.vertical__alinght{
+    color: black;
+    border: 1px solid;
+}
+
+.Navigation *{
+
+    display: inline-block;
+}
+.Navigation__h1 {
+}
+
+nav {
+}
+.Navigation__list {
+}
+
+.Navigation__list__item{
+ margin-right: 20px;
+}
+
+a {
+    color: rgb(92, 177, 8);
+    text-decoration: none;
+}
