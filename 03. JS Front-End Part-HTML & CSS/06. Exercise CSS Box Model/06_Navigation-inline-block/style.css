@@ -1,0 +1,33 @@
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding-left: 15px;
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+}
+a {
+    color: rgb(7, 170, 7);
+    text-decoration: none;
+}
+
+header h1 {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+main h1 {
+
+    font-family: serif;
+    font-weight: 400;
+}
