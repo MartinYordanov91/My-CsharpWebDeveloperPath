@@ -1,0 +1,11 @@
+aside{
+    width: 30%;
+    box-sizing: border-box;
+    float: right;
+    padding: 10px 30px;
+}
+
+aside a{
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}

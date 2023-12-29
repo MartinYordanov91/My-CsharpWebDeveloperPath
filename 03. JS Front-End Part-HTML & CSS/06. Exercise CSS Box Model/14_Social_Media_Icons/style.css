@@ -1,0 +1,31 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+ul {
+    display: inline-block;
+    list-style: none;
+}
+li{
+    margin: 5px;
+    display: inline-block;
+}
+a {
+    background-color: #e2e1e1;
+    padding: 20px 15px 15px 15px;
+    text-decoration: none;
+    border-radius: 50% ;
+}
+i {
+    font-size: 24px;
+    color: #303030;
+}
+.blue:hover {
+    color: blue;
+}
+
+.blue__light:hover{
+    color: rgb(92, 188, 247);
+}
+
+.red:hover{
+    color: rgb(255, 64, 64);
+}

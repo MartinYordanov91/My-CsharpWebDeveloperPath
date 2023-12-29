@@ -1,0 +1,28 @@
+p.title{
+    font: 1.8em/1.2 Georgia, serif;
+    font-weight: bold;
+    display: inline-block;
+    height: 0.5em;
+}
+.header__nav{
+    border-bottom: 2px solid #000;
+    position: relative;
+}
+
+.header__nav li{
+    padding: 0 10px;
+    list-style: none;
+    display: inline-block;
+}
+.header__nav nav{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top:15px
+    
+}
+
+.header__nav a{
+    text-decoration: none;
+    color: rgb(0, 102, 0);
+}
