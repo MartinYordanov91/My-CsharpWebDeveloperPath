@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    font: 16px/1.5 Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main h2 {
+    padding-top: 1em;
+    padding-left: 1.2em;
+    padding-bottom: 0.5em;
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+p {
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+
+main {
+    flex-grow: 1;
+}
+
+header {
+    text-transform: uppercase;
+    flex-basis: 100%;
+    padding-left: 2em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid black;
+}
+
+footer p {
+    padding: 1em;
+    
+    padding-left: 2em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
+}

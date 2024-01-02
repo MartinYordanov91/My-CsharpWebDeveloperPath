@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    background-color: rgb(238, 238, 238);
+    font: 18px/1.5 Verdana, sans-serif;
+}
+
+.cards-layout {
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.card {
+    background-color: white;
+    width: 30%;
+    border: 1px solid rgb(143, 143, 143);
+    border-radius: 0.4em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 2em 0.5em rgb(0, 0, 0, 0.3);
+}
+
+.card section {
+    padding: 1em;
+    flex-grow: 1;
+}
+
+.card footer {
+    padding: 1em;
+    border-top: 1px solid rgb(143, 143, 143);
+}
+
+img {
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+div{
+    padding: 2em;
+    max-width: 30%;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  0 0 1em 0.5em rgb(0 ,0 ,0, 0.2);
+    border-radius: 0.4em;
+}
+p {
+    font-family: Verdana, sans-serif;
+}
