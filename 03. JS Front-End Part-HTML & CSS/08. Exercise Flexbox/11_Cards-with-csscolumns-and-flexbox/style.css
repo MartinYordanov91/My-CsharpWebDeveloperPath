@@ -10,11 +10,16 @@ body {
     font: 18px/1.5 Verdana, sans-serif;
 }
 
+h2{
+    flex-basis: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .cards-layout {
-    padding: 2em;
+    padding: 2em 8em;
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
+    flex-basis: 80vw;
 }
 
 .card {
