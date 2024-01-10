@@ -1,0 +1,57 @@
+html {
+    font: 16px/1.4 Georgia, 'Times New Roman', Times, serif;
+}
+
+body, table , input, button {
+    font: inherit;
+}
+
+h1, h2, h3, h4, h4, h5, h6 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    font-weight: normal;
+}
+
+h1 {font-size: 3.0em;}
+h2 {font-size: 2.4em;}
+h3 {font-size: 1.8em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em; font-weight: bold;}
+h6 {font-size: 1.0em; font-weight: bold;}
+
+p, * + ul, * + ol {
+    padding-bottom: 1.5em;
+}
+
+ul, ol, blockquote {
+    padding-left: 1.5em;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+blockquote {
+    border-left: 4px solid #CCC;
+    margin-bottom: 1.5em;
+    font-style: italic;
+    color: #666;
+}
+
+blockquote p:first-child::before,
+blockquote:has(.author) p:nth-child(2)::not(.author) p:nth-last-child(1)::not(.author)::after {
+    content: '"';
+    display: inline-block;
+}
+
+blockquote p.author {
+    text-align: right;
+    color: black;
+}
+
+blockquote p.author::before {
+    display: inline-block;
+    content: '— ';
+    padding-right:  0.5em;
+}

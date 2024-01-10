@@ -1,0 +1,65 @@
+header {
+    align-items: center;
+    position: relative;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header li {
+    display: block;
+}
+
+header a {
+    font-size: 0.6em;
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 0.7em;
+}
+
+header i {
+    font-size: 0.8em;
+}
+
+#nav-check {
+    appearance: none;
+    pointer-events: none;
+}
+
+@media (min-width: 600px) {
+
+    header nav {
+        display: flex;
+    }
+
+    header label {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    #nav-check:checked+.sait nav {
+        display: block;
+        position: absolute;
+        right: 2em;
+        top: 4em;
+    }
+
+    #nav-check:checked+.sait ul {
+        display: block;
+    }
+
+    #nav-check:checked+.sait li {
+        border-radius: 0.3em;
+        box-shadow: 0 0 0.2em 0.1em rgb(0, 0, 0, 0.2);
+    }
+
+    #nav-check:checked+.sait li+li {
+        margin-top: 0.2em;
+    }
+}

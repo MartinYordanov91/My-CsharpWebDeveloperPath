@@ -1,0 +1,103 @@
+body {
+    padding: 5em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    height: 100vh;
+    font-family: Tahoma, sans-serif;
+}
+
+button {
+    color: white;
+    background-color: #413f3f;
+    padding: 0.4em 1.2em;
+    font-weight: bold;
+    border-radius: 0.3em;
+    width: 5em;
+}
+
+.conteiner {
+    padding: 2em;
+    position: relative;
+    border: 1px solid #949494;
+    flex-basis: 25em;
+    background-color: rgb(245, 245, 245);
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0.1em rgb(146, 146, 146);
+}
+
+.line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.line input {
+    flex: 1 1 70%;
+    border-radius: 0.3em;
+    border: 1px solid #b4b4b4;
+    text-align: left;
+    padding-left: 10%
+}
+
+.line i {
+    position: relative;
+    top: 1em;
+    left: 1.5em;
+}
+
+.line p {
+    width: 5.2em;
+    font-weight: bold;
+}
+
+.login_Lable {
+    overflow: hidden;
+    border: 1px solid #949494;
+    border-radius: 0.3em;
+    width: 12em;
+    position: absolute;
+    top: -1em;
+    left: -1px;
+    box-shadow: 0 0 1em 0.1em rgb(146, 146, 146);
+}
+
+.login_Lable p {
+    overflow: hidden;
+    margin: 0;
+    padding: 0.4em ;
+    padding-left: 0.5em;
+    background-color: rgb(255, 253, 253);
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+@media (min-width: 600px) {
+    * {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 800px) {
+    * {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1300px) {
+    * {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1800px) {
+    * {
+        font-size: 28px;
+    }
+}

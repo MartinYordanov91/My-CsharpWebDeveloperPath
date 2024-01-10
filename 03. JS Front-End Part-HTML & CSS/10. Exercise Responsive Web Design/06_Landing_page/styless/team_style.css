@@ -1,0 +1,99 @@
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60em;
+    padding: 0 2em;
+    margin: auto;
+    gap: 2em;
+    justify-content: space-around;
+}
+
+.team_header {
+    flex-basis: 100%;
+    text-align: center;
+    justify-items: center;
+}
+
+.team_line {
+    width: 5em;
+    border-top: 3px solid #000000;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.team h3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+.team_card {
+    width: 16em;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.team_img {
+    margin: 0 auto 1.5em auto;
+    width: 8em;
+    height: 8em;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 0.5em 0.3em rgba(0, 0, 0, 0.2);
+}
+
+.team_img img {
+    width: 100%;
+
+}
+
+.team_name {
+    font-size: 1.3em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-bottom: 0;
+}
+
+.team_position {
+    font-size: 0.9em;
+    color: #363636;
+}
+
+.team_info {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.team_about {
+    font-size: 1em;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+@media (min-width: 800px) {
+    .team_card {
+        width: 13em;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .team_img {
+        width: 6.5em;
+        height: 6.5em;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    .team_card {
+        width: 16em;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .team_img {
+        width: 8em;
+        height: 8em;
+    }
+
+}

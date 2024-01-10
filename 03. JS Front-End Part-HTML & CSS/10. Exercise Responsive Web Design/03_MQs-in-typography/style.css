@@ -1,0 +1,64 @@
+@import url(reset.css);
+@import url(typography.css);
+@import url(layout.css);
+
+/* header title style  */
+
+header span{
+    display: block;
+    font-size: 2.4em;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 3px solid black;
+    padding-bottom: 0.5em;
+}
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (min-width: 500px){ 
+    body {
+        font-size: 14px;
+    }
+
+    .right{
+        float: right;
+        margin-left: 1em;
+    }
+
+    .left {
+        float: left;
+        margin-right: 1em;
+    }
+    
+    blockquote {
+        float: right;
+        margin-left: 1em;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 600px){
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 800px){
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1300px){
+    body {
+        font-size: 21px;
+    }
+}
+
+@media screen and (min-width: 1800px){
+    body {
+        font-size: 23px;
+    }
+}

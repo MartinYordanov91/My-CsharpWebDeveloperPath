@@ -1,0 +1,33 @@
+.subscribe{
+    background-color: rgb(94, 0, 182);
+}
+
+.subscribe_header {
+    flex-basis: 100%;
+    text-align: center;
+    justify-items: center;
+    color: white;
+}
+
+.subscribe_line {
+    width: 5em;
+    border-top: 3px solid #000000;
+    margin: auto;
+    margin-bottom: 0.5em;
+}
+
+.input_subscribe {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+}
+
+.input_subscribe input {
+    width: 15em;
+    margin-right: 1em;
+}
+
+.input_subscribe button {
+    padding: 0 1.3em;
+    font-size: 0.8em;
+}

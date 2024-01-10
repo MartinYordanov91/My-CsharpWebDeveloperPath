@@ -1,0 +1,68 @@
+@import url(reset.css);
+@import url(typography.css);
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 98vw;
+    padding-top: 0.5em;
+    gap: 1em;
+    margin: auto;
+    vertical-align: middle;
+}
+
+header, nav, main, footer {
+    background-color: rgb(151, 202, 250);
+    border-radius: 0.3rem;
+    padding: 0.5em;
+}
+
+header, footer{
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    padding-top: 1.2em;
+    flex-grow: 1;
+}
+
+main {
+    flex-grow: 5;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    padding-bottom: 1em;
+}
+
+footer p {
+    padding: 0;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main h3{
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+footer data {
+    font-family:'Times New Roman', Times, serif;
+}
+
+@media(max-width: 500px) {
+
+    body {
+        flex-direction: column;
+    }
+    
+}

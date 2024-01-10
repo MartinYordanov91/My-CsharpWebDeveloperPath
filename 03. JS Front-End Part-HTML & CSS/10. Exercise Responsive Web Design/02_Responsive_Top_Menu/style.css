@@ -1,0 +1,119 @@
+@import url(reset.css);
+@import url(typography.css);
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 98vw;
+    padding-top: 0.5em;
+    gap: 1em;
+    margin: auto;
+    vertical-align: middle;
+}
+
+header,
+nav,
+main,
+footer {
+    background-color: rgb(151, 202, 250);
+    border-radius: 0.3rem;
+    padding: 0.5em;
+}
+
+header,
+footer {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    padding-top: 1.2em;
+    flex-grow: 1;
+}
+
+main {
+    flex-grow: 5;
+}
+
+header ul {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+header ul li {
+    padding-bottom: 0;
+}
+
+header ul a {
+    color: rgb(25, 95, 160);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    padding-bottom: 1em;
+}
+
+footer p {
+    padding: 0;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main h3 {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+}
+
+footer data {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media(max-width: 500px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header h1{
+        position: absolute;
+        top: 0.4em;
+        left: 0.3em;
+    }
+
+    header nav {
+        padding-top: 5em;
+    }
+
+    header nav ul {
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav li {
+        display: flex;
+        padding-left: 6em;
+        padding-bottom: 1.5em;
+        justify-content: center;
+    }
+
+    header nav a {
+        display: block;
+        padding-left: 5px;
+    }
+}
