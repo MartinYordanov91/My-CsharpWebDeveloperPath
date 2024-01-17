@@ -1,0 +1,104 @@
+body * {
+    box-sizing: border-box;
+}
+
+.timeline {
+    border: 0.3rem solid rgb(153, 153, 153);
+    padding: 4em;
+    position: relative;
+    overflow: hidden;
+}
+
+span {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+}
+
+h2 {
+    max-width: 40em;
+    text-align: center;
+    font-size: .8em;
+    background-color: white;
+    overflow: hidden;
+    border: .2rem solid rgb(153, 153, 153);
+    padding: 0.5em 2em;
+    margin-top: 0;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 1.6em;
+    margin-bottom: 0;
+}
+
+.timeline article {
+    position: relative;
+    padding: 0 0 2em 3em;
+}
+
+.timeline article::before {
+    display: block;
+    content: '';
+    position: absolute;
+    border: .2rem solid rgb(153, 153, 153);
+    border-radius: 50%;
+    background-color: green;
+    width: 1.5em;
+    height: 1.5em;
+    top: 0;
+    left: 0;
+}
+
+.timeline::before {
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: rgb(153, 153, 153);
+    width: 0.4em;
+    height: 100%;
+    left: 4.7em;
+}
+
+.timeline article:nth-child(odd)::before {
+    background-color: orange;
+}
+
+@media(min-width:600px) {
+
+    h2{
+        padding: 0.5em 6em;
+    }
+    span {
+        justify-content: center;
+    }
+
+    .timeline::before {
+        left: calc(50%)
+    }
+
+    .timeline article {
+        width: 50%;
+        padding-bottom: 0;
+        margin-top: -2em;
+        margin-bottom: -3em;
+    }
+
+    .timeline article:nth-child(even) {
+        margin-left: calc(50% - .75em);
+
+    }
+
+    .timeline article:nth-child(odd) {
+        /* padding-left: 0; */
+        padding-right: 3em;
+        text-align: right;
+    }
+
+    .timeline article:nth-child(odd)::before {
+        left: inherit;
+        right: -1.19em;
+    }
+}
