@@ -1,0 +1,87 @@
+@media (max-width: 600px) {
+    .game-world-header.container.placeholder {
+        height: auto;
+    }
+
+    .parallax-window {
+        position: static;
+        height: 190px;
+    }
+
+    .tm-header {
+        position: static;
+    }
+
+    .row.tm-header-inner {
+        flex-direction: column;
+        padding: 2px;
+        align-items: center;
+    }
+
+    .row.tm-welcome-section {
+        margin: 40px auto;
+        padding: 0 1em;
+    }
+
+    .col-12.text-center.tm-section-title {
+        margin-left: 0;
+        margin-bottom: 15px;
+        padding: 0 2em;
+    }
+
+    .tm-gallery {
+        margin-left: 0;
+        margin-bottom: 40px;
+    }
+
+    .tm-gallery-page {
+        margin: 0 60px 0 80px;
+        justify-content: center;
+    }
+
+    .tm-gallery-img {
+        margin-bottom: 10px;
+    }
+
+    #tm-gallery-page-all .tm-gallery-title {
+        text-indent: 38px;
+        margin-bottom: 9px;
+    }
+
+    .tm-gallery-description {
+        font-size: 0.75rem;
+        margin-bottom: 10px;
+    }
+
+    .tm-gallery-item {
+        /* max-width: 600px; */
+    }
+
+    .tm-gallery-price {
+        /* font-size: 1.05rem; */
+        margin-bottom: 30px;
+    }
+
+    .tm-cta-section {
+        max-width: 82%;
+        flex-direction: column;
+    }
+
+    .tm-description-figure {
+        width: auto;
+    }
+
+    .tm-gallery-title {
+        text-indent: 0px;
+    }
+
+    .tm-mb-45 {
+        padding-right: 1em;
+
+    }
+
+    .tm-footer {
+        margin-top: 25px;
+    }
+
+}

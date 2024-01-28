@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html * {
+    padding: 0;
+    margin: 0;
+    font: 14px/1.5 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+.sait {
+    /* margin: 0 auto;
+    max-width: 1800px; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+
+.head_nav {
+    letter-spacing: 2px;
+    color: #696969;
+    padding: 1em 2.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.head_nav span {
+    color: #313131;
+    font-weight: bold;
+    font-size: 3.5em;
+    padding-right: .4em;
+    margin-right: .7em;
+    border-right: 3px solid #DBDBDB;
+}
+
+.head_nav p {
+    font-weight: bold;
+    font-size: .95em;
+}
+
+.head_nav ul {
+
+    margin: 1.5em 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.head_nav li {
+    display: block;
+    list-style: none;
+}
+
+.head_nav a {
+    font-size: 1.05em;
+    margin: .05em;
+    font-weight: bold;
+    color: #696969;
+    background-color: #ECECEC;
+    padding: 1.5em;
+    text-decoration: none;
+}
+
+.head_nav #header_li_first {
+    background-color: #56DBB1;
+    color: #000000;
+}
+
+/* Image Styles */
+.image {
+    aspect-ratio: 16 / 6;
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+}
+
+/* Text Content */
+
+.content {
+    padding: 5.5em 16em;
+    background-color: #56DBB1;
+}
+
+.content p {
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25em;
+    line-height: 1.8;
+}
+
+/* Menu Style */
+
+.menu {
+    display: flex;
+    padding: 8em;
+    gap: 4em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #353434;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}
+
+.pic {
+    display: flex;
+    margin: 0 auto;
+    width: 8em;
+    height: 8em;
+    background-color: #56DBB1;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu_title {
+    font-size: 1.3em;
+    color: white;
+}
+
+.menu_content {
+    font-size: 1.1em;
+    color: #5B5956;
+}
+
+.menu p {
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.pic i {
+    color: white;
+    font-size: 4em;
+}
+
+/* Convallis Style */
+
+.convallis {
+    text-align: center;
+    padding: 5.5em 16em;
+}
+
+.convallis_title {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #5F5F5F;
+}
+
+.convallis_content {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #C3BCB8;
+    margin-bottom: 2.5em;
+}
+
+.convallis_button {
+    padding: 1.6em 3.6em;
+    color: white;
+    font-size: .7em;
+    font-weight: bold;
+    background-color: #974D1B;
+    display: inline;
+    letter-spacing: 3px;
+}
+
+/* About style  */
+.about {
+    display: flex;
+    padding: 8em;
+    gap: 4em;
+    text-align: center;
+    font-weight: bold;
+    background-color: #353434;
+}
+
+.about_title {
+    color: white;
+    font-weight: bold;
+    font-size: 1.6em;
+    letter-spacing: 1px;
+    margin-bottom: 1em;
+}
+
+.about_content {
+    line-height: 1.8em;
+    color: #5B5956;
+}
+
+/* Footer style */
+
+.footer {
+    text-align: center;
+    padding: 5em;
+    background-color: #1B9772;
+}
+
+.footer p {
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #56DBB1;
+}
+
+.footer span {
+    color: #DBFAF0;
+    font-weight: bold;
+}
+
+/* Some Responsive */
+
+@media (max-width: 1400px) {
+    html * {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1000px) {
+    html * {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    html * {
+        font-size: 6px;
+    }
+}
+
+@media (max-width: 600px) {
+    html * {
+        font-size: 4px;
+    }
+}

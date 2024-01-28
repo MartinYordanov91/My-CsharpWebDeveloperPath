@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+html {
+    padding: 1em;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: 14px/1.5 'Agbalumo', system-ui;
+}
+
+.sait {
+    border: 2px solid #000000;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+
+header {
+    background-color: #D5EBEA;
+    padding: 1em 1em 0 1em;
+}
+
+.title,
+.title__next {
+    border-bottom: 2px solid #000000;
+    text-align: center;
+    margin-right: 2em;
+}
+
+.title span {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* main */
+
+main {
+    position: relative;
+    padding: 1em;
+    display: flex;
+    gap: 2em;
+    margin: 1em 0 3em 0;
+}
+
+.card {
+    padding: 1em;
+    border: 1px solid #000000;
+}
+
+.img__bord {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card__info {
+    text-indent: 30px;
+    font-size: 0.7em;
+}
+
+.poslepis {
+    position: absolute;
+    bottom: -3em;
+    left: 0;
+    background-color: #000000;
+    color: white;
+}
+
+.content p {
+    text-indent: 30px;
+    margin-top: 1em;
+    margin-right: 2em;
+}
+
+.poslepis p {
+    padding: 0 4em;
+    font-size: 1.3em;
+}
+
+/* footer */
+
+footer {
+    background-color: #D5EBEA;
+}
+
+footer li {
+    padding: 0.2em 1em;
+    margin: 0.5em;
+    display: block;
+    font-size: 0.8em;
+}
+
+@media (min-width: 700px) {
+    body * {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 900px) {
+    body * {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 900px) {
+    body * {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body * {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1600px) {
+    body * {
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 1800px) {
+    body * {
+        font-size: 30px;
+    }
+}
