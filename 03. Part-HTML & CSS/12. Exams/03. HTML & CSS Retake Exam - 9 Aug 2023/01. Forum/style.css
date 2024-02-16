@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css);
+
+body * {
+    font: 16px/1.5 "Inter", sans-serif;
+}
+
+body {
+    background: url(images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /* box-sizing: border-box; */
+    /* font-family: "Inter", sans-serif; */
+    /* padding: 3em 8em; */
+    height: 100vh;
+    margin: 0 auto;
+}
+
+section {
+    display: flex;
+    gap: 2.5em;
+    padding: 60px 145px;
+}
+
+.vertically {
+    width: 530px;
+    display: flex;
+}
+
+.horizontal {
+    /* max-width: 68%; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 1060px;
+}
+
+.left {
+    height: 405px;
+    background-color: white;
+    display: flex;
+    padding-left: 60px;
+    align-items: center;
+    /* padding-top: 1em; */
+    /* justify-content: space-between; */
+}
+
+.right {
+    background-color: white;
+    padding: 2em 2em .5em;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right-footer {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.horizontal-content {
+    width: 70%;
+}
+
+.horizontal-image {
+    margin: 2em;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.right-image {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 1em;
+    filter: grayscale(100%);
+}
+
+img {
+    width: 100%;
+    /* height: 0%; */
+}
+
+.some-height {
+    height: 100%;
+}
+
+.left-simbol i {
+    font-size: 68px;
+    margin: .2em 0;
+    padding: 0;
+}
+
+.left-text {
+    color: #5d5b5a;
+    font-size: 24px;
+    line-height: 1em;
+}
+
+.from {
+    margin-top: 1.5em;
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.right-text {
+    flex-grow: 1;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.right span{
+    font-size: 31px;
+    font-weight: 600;
+}
+.right-simbol i {
+    padding-top: 20px;
+    font-size: 120px;
+}
+.right-text{
+    font-size: 24px;
+    color: #5d5b5a;
+    line-height: 1em;
+    padding-top: 3em;
+}
