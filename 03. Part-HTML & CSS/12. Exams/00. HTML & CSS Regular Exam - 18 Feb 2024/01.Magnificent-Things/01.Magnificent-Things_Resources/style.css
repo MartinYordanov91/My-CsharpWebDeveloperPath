@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
+
+body * {
+    font-family: inter, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #85DCFF;
+    padding: 60px 32px;
+    max-width: 1060px;
+    /* height: 620px; */
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+.image {
+    width: 362px;
+    height: 480px;
+    overflow: hidden;
+    box-shadow: 10px 10px 26px -6px rgba(0, 0, 0, 0.67);
+    -webkit-box-shadow: 10px 10px 26px -6px rgba(0, 0, 0, 0.67);
+    -moz-box-shadow: 10px 10px 26px -6px rgba(0, 0, 0, 0.67);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+}
+
+a {
+    text-decoration: none;
+}
+
+.butons {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+
+.one {
+    color: #000000;
+    background-color: #42AA59;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.one:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.tow{
+    color: #000000;
+    background-color: #ffffff;
+    padding: 1em 2em;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+}
