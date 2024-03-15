@@ -1,4 +1,4 @@
-function slove(input) {
+function solve(input) {
   class Cat {
     constructor(name, age) {
       this.name = name;
@@ -17,6 +17,6 @@ function slove(input) {
   });
 }
 
-slove(["Mellow 2", "Tom 5"]);
+solve(["Mellow 2", "Tom 5"]);
 
-slove(["Candy 1", "Poppy 3", "Nyx 2"]);
+solve(["Candy 1", "Poppy 3", "Nyx 2"]);

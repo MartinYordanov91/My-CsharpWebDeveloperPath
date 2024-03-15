@@ -1,4 +1,4 @@
-function slove(input) {
+function solve(input) {
   class Song {
     constructor(typeList, name, time) {
       this.typeList = typeList;
@@ -26,7 +26,7 @@ function slove(input) {
   }
 }
 
-slove([
+solve([
   3,
   "favourite_DownTown_3:14",
   "favourite_Kiss_4:16",
@@ -34,7 +34,7 @@ slove([
   "favourite",
 ]);
 
-slove([
+solve([
   4,
   "favourite_DownTown_3:14",
   "listenLater_Andalouse_3:24",
@@ -43,4 +43,4 @@ slove([
   "listenLater",
 ]);
 
-slove([2, "like_Replay_3:15", "ban_Photoshop_3:48", "all"]);
+solve([2, "like_Replay_3:15", "ban_Photoshop_3:48", "all"]);

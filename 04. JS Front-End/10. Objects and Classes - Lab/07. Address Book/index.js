@@ -1,4 +1,4 @@
-function slove(input) {
+function solve(input) {
   let adresBook = input.reduce((acc, curent) => {
     const [name, adres] = curent.split(":");
     acc[name] = adres;
@@ -10,7 +10,7 @@ function slove(input) {
   sortedName.forEach((x) => console.log(`${x} -> ${adresBook[x]}`));
 }
 
-slove([
+solve([
   "Tim:Doe Crossing",
   "Bill:Nelson Place",
   "Peter:Carlyle Ave",
