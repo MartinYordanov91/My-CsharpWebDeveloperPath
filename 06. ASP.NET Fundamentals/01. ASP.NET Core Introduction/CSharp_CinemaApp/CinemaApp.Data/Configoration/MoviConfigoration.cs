@@ -28,6 +28,9 @@ public class MoviConfigoration : IEntityTypeConfiguration<Movie>
             .IsRequired()
             .HasMaxLength(DescriptionMaxLength);
 
+        
+
+
         builder.HasData(this.SeedMovies());
     }
 
